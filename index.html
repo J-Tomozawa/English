@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words</title>
+    <meta name="description" content="英単語アプリ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form is-show" id="modal">
+            <div class="form__contents">
+                <div class="form__content">
+                    <h2>単語を追加する</h2>
+                    <p>単語<input type="text" id="new-word"></p>
+                    <p>意味<input type="text" id="new-meaning"></p>
+                    <button id="add-word">追加</button>
+                </div>
+                <div><button  class="start-btn" id="start-btn">START</button></div>
+            </div>
+        </div>
+        <div class="content">
+            <div id="qword" class="word">word</div>
+            <div class="answer">
+                <a href="#" data-ans="0">選択肢</a>
+                <a href="#" data-ans="1">選択肢</a>
+                <a href="#" data-ans="2">選択肢</a>
+                <a href="#" data-ans="3">選択肢</a>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
